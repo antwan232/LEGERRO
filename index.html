@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" dir="rtl" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&family=Questrial&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+		<link rel="shortcut icon" type="image/png" href="img/logo-small.jpg" />
+		<link rel="stylesheet" href="fonts/Questrial-Regular.ttf" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/aos.css" />
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+		<title>Ligerro</title>
+		<link rel="stylesheet" href="css/output.css" />
+	</head>
+	<body>
+		<!-- header start -->
+		<header class="h-screen relative overflow-hidden">
+			<!-- header background start -->
+			<div class="relative h-full">
+				<div class="bg-gradient-to-b from-[#8F28EB] to-[#9127E9] absolute top-0 left-0 flex justify-center items-center inset-0 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black/15">
+					<div class="blur-xl h-full pt-10 flex justify-center items-center absolute">
+						<img class="scale-[3] md:scale-[4.5] object-contain relative" src="img/logo-small.jpg" alt="" />
+					</div>
+				</div>
+
+				<!-- navbar start -->
+				<div class="text-black nav sm:hidden w-full text-3xl fixed pl-16 pt-14 z-40 flex flex-col justify-center items-center">
+					<!-- nav button -->
+					<button id="menuBtn" class="w-[4rem] group shadow-xl bg-white cursor-pointer h-[4rem] rounded-full text-black text-3xl fixed right-5 top-5 flex justify-center items-center flex-shrink-0">
+						<div id="menuStick" class="w-8 h-[1px] cursor-pointer absolute bg-black after:contents[''] before:contents[''] after:absolute before:absolute flex-shrink-0 after:w-8 after:h-[1px] before:w-8 before:h-[1px] before:bg-black after:bg-black after:top-2 group-hover:after:top-[10px] group-hover:after:pb-[2.5px] transition-all duration-200 after:duration-200 before:duration-200 before:transition-all after:transition-all after:left-0 before:-top-2 group-hover:before:-top-[10px] group-hover:before:pb-[2.5px] before:left-0"></div>
+					</button>
+					<!-- menu background -->
+					<div id="menuBg" class="w-[4rem] shadow-xl bg-menu -z-50 transition-all duration-700 h-[4rem] rounded-full text-black text-3xl fixed right-5 top-5 flex justify-center items-center bg-gradient-to-r from-[#8F28EB] to-[#9127E9]"></div>
+					<!-- menu list -->
+					<nav id="menuUl" class="-z-40 opacity-0 invisible -translate-x-1/2 -translate-y-1/2 top-72 left-0 w-0 absolute transition-all duration-[.7s] ease-[cubic-bezier(0.68,_-0.55,_0.265,_1.55)] h-full flex justify-center items-center text-white">
+						<ul class="font-light uppercase space-y-5 text-center mt-10">
+							<li class="cursor-pointer bg-menu__item transition-all ease-out duration-500 hover:text-primary-100">
+								<a data-link="0" href="#about" class="nav__link p-4 block">معرض الاعمال</a>
+							</li>
+							<li class="cursor-pointer bg-menu__item transition-all ease-out duration-500 hover:text-primary-100">
+								<a data-link="1" href="#cards" class="nav__link p-4 block">احدث المنتجات</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- navbar end -->
+
+				<div class="absolute top-0 left-0">
+					<!-- navbar start:sm -->
+					<nav class="nav py-3 fixed z-50 top-0 left-1/2 -translate-x-1/2 hidden sm:block">
+						<ul id="menu" class="text-white mx-auto flex sm:w-[40rem] md:w-[45rem] lg:w-[50rem] items-center justify-center relative gap-20">
+							<span class="navLine absolute transition-all duration-200 w-full h-1 bottom-5 bg-[#FFD700] rounded-full scale-0 opacity-0 invisible"></span>
+							<li class="font-semibold text-2xl flex items-center justify-center relative h-20 transition-all duration-300">
+								<span class="navLine absolute transition-all duration-200 scale-0 opacity-0 invisible w-32 h-1 bottom-5 flex after:-right-1 before:-left-1 before:absolute items-center bg-[#FFD700] before:w-4 before:h-4 before:rounded-[50%] before:bg-primary before:transition-all before:duration-500 after:absolute after:w-4 after:h-4 after:rounded-[50%] after:bg-primary after:transition-all after:duration-500"></span>
+								<a data-link="0" href="#about" class="nav__link transition-all duration-200 block py-4">معرض الأعمال</a>
+							</li>
+							<li class="font-semibold text-2xl transition-all duration-300">
+								<a href="#cards" class="w-20 h-20 flex items-center justify-center relative" href="index.html">
+									<span class="navLine absolute transition-all scale-0 opacity-0 invisible duration-200 w-32 h-1 bottom-5 flex after:-right-1 before:-left-1 before:absolute items-center bg-[#FFD700] before:w-4 before:h-4 before:rounded-[50%] before:bg-primary before:transition-all before:duration-500 after:absolute after:w-4 after:h-4 after:rounded-[50%] after:bg-primary after:transition-all after:duration-500"></span>
+									<img src="img/logo-small.jpg" alt="" class="w-full h-full rounded-[50%] shadow-xl absolute top-0 left-0" />
+								</a>
+							</li>
+
+							<li class="font-semibold text-2xl flex items-center justify-center relative h-20 transition-all duration-300">
+								<span class="navLine absolute transition-all scale-0 opacity-0 invisible duration-200 w-32 h-1 bottom-5 flex after:-right-1 before:-left-1 before:absolute items-center bg-[#FFD700] before:w-4 before:h-4 before:rounded-[50%] before:bg-primary before:transition-all before:duration-500 after:absolute after:w-4 after:h-4 after:rounded-[50%] after:bg-primary after:transition-all after:duration-500"></span>
+								<a data-link="1" href="#cards" class="nav__link transition-all duration-200 block py-4">أحدث المنتجات</a>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- navbar end:sm -->
+				</div>
+			</div>
+
+			<!-- header background end -->
+			<!-- main start -->
+			<main data-aos="fade-down" data-aos-delay="50" id="main" class="sm:mb-20 flex justify-center items-center absolute bottom-20 left-0 flex-col w-full text-center text-white">
+				<h1 class="relative inline-block" dir="ltr">
+					<span class="animate-typeAndBack text-4xl text-purple-200"></span>
+					<span class="cursor-span cursor m-0 text-3xl animate-cursorBlink p-0 mb-3 text-purple-200">|</span>
+				</h1>
+
+				<h1 class="text-2xl sm:text-4xl tracking-wider p-5 font-bold">تشكيلة واسعة تناسب جميع الأذواق</h1>
+				<p class="sm:text-lg tracking-wider p-5 font-semibold">قمصان ليجيرو: جودة عالية، تصاميم حصرية، خامات طبيعية، وراحة لا مثيل لها!</p>
+			</main>
+			<!-- main end -->
+		</header>
+		<!-- header end -->
+
+		<!-- About start -->
+		<section data-section="0" id="about" class="h-screen bg-gray-200 px-5 md:px-2 flex md:flex-row flex-col-reverse gap-3 md:gap-1 justify-center items-center md:py-16 py-8 overflow-hidden">
+			<div data-aos="fade" data-aos-duration="600" data-aos-delay="1200" class="w-full px-5 h-1/2 rounded-md img md:h-[32rem] lg:h-[35rem]"></div>
+			<div class="flex md:flex-col justify-center items-center gap-3 md:gap-1 w-full h-1/2 md:h-[32rem] lg:h-[35rem] md:w-[20rem] lg:w-[25rem] my-0">
+				<div data-aos="fade-right"  data-aos-delay="100" class="h-full lg:h-2/3 w-full overflow-hidden before:flex before:items-center before:justify-center after:rounded-lg after:w-full after:h-full after:absolute relative after:top-0 after:left-0 after:bg-black/30 before:absolute before:-left-16 before:top-7 before:-rotate-45 before:z-10 before:hidden before:h-8 before:bg-orange-400 before:text-white before:content-['150egp']">
+					<img class="h-full w-full shadow-lg rounded-md object-cover" src="img/about-3.jpg" alt="" />
+				</div>
+				<div data-aos="fade-right"  data-aos-delay="500" class="h-full lg:h-2/3 w-full overflow-hidden before:flex before:items-center before:justify-center after:rounded-lg after:w-full after:h-full after:absolute relative after:top-0 after:left-0 after:bg-black/30 before:absolute before:-left-16 before:top-7 before:-rotate-45 before:z-10 before:hidden before:h-8 before:bg-orange-400 before:text-white before:content-['250egp']">
+					<img class="h-full w-full shadow-lg rounded-md object-cover" src="img/about-4.jpg" alt="" />
+				</div>
+			</div>
+		</section>
+		<!-- About end -->
+
+		<!-- Cards start -->
+
+		<section data-section="1" id="cards" class="h-screen p-16 mb-20 sm:mb-10">
+			<div class="flex justify-center items-between flex-col relative">
+				<div class="flex justify-between items-center mb-10">
+					<div class="flex gap-3">
+						<button class="relative swiper-next bg-white border-gray-200 active:bg-gray-100 hover:bg-gray-50 cursor-pointer border sm:p-6 sm:w-10 w-7 h-7 sm:h-10 rounded-full flex justify-center items-center">
+							<i class="fa-solid fa-angle-right text-base sm:text-2xl absolute"></i>
+						</button>
+						<button class="relative swiper-prev bg-white border-gray-200 active:bg-gray-100 hover:bg-gray-50 cursor-pointer border sm:p-6 sm:w-10 w-7 h-7 sm:h-10 rounded-full flex justify-center items-center">
+							<i class="fa-solid fa-angle-left text-base sm:text-2xl absolute"></i>
+						</button>
+					</div>
+					<h1 class="font-bold text-lg sm:text-2xl">افضل المنتجات</h1>
+				</div>
+
+				<div class="mySwiper text-center sm:w-full overflow-hidden rounded flex justify-center items-center" dir="ltr">
+					<div class="flex swiper-wrapper w-full h-full transition-all duration-300">
+						<div data-aos="fade-right" class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/t-shirt-white.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div data-aos="fade-right" data-aos-delay="200"  class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/about-2.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div data-aos="fade-right" data-aos-delay="400"  class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/about-5.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div data-aos="fade-right" data-aos-delay="600"  class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/about-6.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div data-aos="fade-right" data-aos-delay="800"  class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/about-8.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div   class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/about-9.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div   class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/man-t-shirt-white.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div   class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/man-t-shirt-white-logo-4.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div   class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/t-shirt-black-logo-1.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div   class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/t-shirt-black-logo-2.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div   class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/t-shirt-black-logo-3.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+						<div  class="swiper-slide flex justify-center items-center flex-col">
+							<div class="h-96 w-full rounded-t space-y-2 overflow-hidden">
+								<img src="img/t-shirt-white.jpg" class="h-full w-full object-cover" alt="" />
+							</div>
+							<div class="bg-gray-50 py-2 rounded-b font-bold w-full">
+								<p>الخامة:سنجل ليكرا</p>
+								<p>السعر: <del>250</del> 200ج</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Cards end -->
+
+		<!-- footer start -->
+		<footer class="h-24 bg-gradient-to-b flex flex-col justify-center items-center from-[#8F28EB] to-[#9127E9] w-full text-white">
+			<a href=""> Abanop Gamal <i class="fa-brands fa-facebook ml-2"></i></a>
+			<a href=""> Azba Alnaghl <i class="fa-solid fa-location-dot ml-2"></i></a>
+		</footer>
+		<!-- footer end -->
+
+		<!--------------------------------------------------------------------------------------------->
+		<!-- Whatsapp -->
+		<div class="fixed bottom-0 m-8 right-0 z-50">
+			<a target="_blank" href="https://wa.me/201200482227" class="absolute bottom-0 right-0 w-12 h-12 rounded-full bg-green-400 bg-gradient-to-r from-green-600 to-green-400 flex justify-center items-center transition-all duration-300 social-media"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff"></i> </a>
+		</div>
+
+		<script src="js/aos.js"></script>
+
+		<script>
+			AOS.init({
+				delay: 200, // values from 0 to 3000, with step 50ms
+				duration: 1500, // values from 0 to 3000, with step 50ms
+				once: false, // whether animation should happen only once - while scrolling down
+				mirror: false, // whether elements should animate out while scrolling past them
+			});
+		</script>
+		<script src="https://kit.fontawesome.com/1744f00701.js" crossorigin="anonymous"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
